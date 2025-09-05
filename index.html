@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grão Nobre - Loja de Café Especial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/Log.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/Log.png" alt="Logo Grão Nobre" class="logo-img" />
+                <h1 class="logo">Grão Nobre</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Produtos</a></li>
+                    <li><a href="pages/sobre/sobre.html">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>O melhor café especial para você</h2>
+            <p>Descubra os sabores e aromas que só o Grão Nobre oferece.</p>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos container">
+        <h2>Produtos</h2>
+        <div class="grid-produtos">
+
+            <!-- Produto 1 -->
+            <article class="produto">
+                <img src="assets/Rosso-Caffe.webp" alt="Café Arábica Rosso Caffè" />
+                <h3>Café Rosso Puro Arabica 460g</h3>
+                <p>Arábica premium, suave e encorpado. Ótimo para espresso e coado. uma explosão de sabor e Cada vez
+                    mais intenso.</p>
+                <p class="preco">R$ 55,00</p>
+
+                <!-- Checkbox hack para abrir modal -->
+                <input type="checkbox" id="modal1-toggle" class="modal-toggle" />
+                <label for="modal1-toggle" class="btn-comprar">Comprar</label>
+
+                <!-- Modal -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal1-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 2 -->
+            <article class="produto">
+                <img src="assets/Robusta.webp" alt="Café Robusta Hanoi" />
+                <h3>Café Hanoi Robusta 500g </h3>
+                <p>Robusta puro, sabor encorpado e intensidade marcante, irresistível. Melhor sabor coado. Um Especial
+                    entre todos os Cafés do mundo.</p>
+                <p class="preco">R$ 95,00</p>
+
+                <input type="checkbox" id="modal2-toggle" class="modal-toggle" />
+                <label for="modal2-toggle" class="btn-comprar">Comprar</label>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal2-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 3 -->
+            <article class="produto">
+                <img src="assets/ESpecial.png" alt="Café Especial" />
+                <h3>Café Coffee Edição Especial 500g</h3>
+                <p>Sabor intenso, aroma marcante, o café especial que desperta sentidos. Á cada xícara todo o seu sono
+                    se vai.</p>
+                <p class="preco">R$ 110,00</p>
+
+                <input type="checkbox" id="modal3-toggle" class="modal-toggle" />
+                <label for="modal3-toggle" class="btn-comprar">Comprar</label>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal3-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 4 -->
+            <article class="produto">
+                <img src="assets/organico.webp" alt="Café Orgânico" />
+                <div class="soba">
+                    <h3>Café Orgânico GroundWork 460g</h3>
+                    <p>Produzido sem agrotóxicos, sabor puro. Do grão à xícara.</p>
+                    <p class="preco">R$ 75,00</p>
+                </div>
+
+                <input type="checkbox" id="modal4-toggle" class="modal-toggle" />
+                <label for="modal4-toggle" class="btn-comprar">Comprar</label>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal4-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 5 -->
+            <article class="produto">
+                <img src="assets/descafeinadio.png" alt="Café Descafeinado" />
+                <h3>Café Melitta Descafeinado 250g</h3>
+                <p>Sabor intenso sem cafeína, perfeito para qualquer hora do dia.</p>
+                <p class="preco">R$ 50,00</p>
+
+                <input type="checkbox" id="modal5-toggle" class="modal-toggle" />
+                <label for="modal5-toggle" class="btn-comprar">Comprar</label>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal5-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 6 -->
+            <article class="produto">
+                <img src="assets/blend.webp" alt="Café Blend" />
+                <h3>Café Blend SENSAÇÃO 1kg</h3>
+                <p>Equilibrado e aromático, sabor intenso e encorpado. Ideal para coador.</p>
+                <p class="preco">R$ 205,00</p>
+
+                <input type="checkbox" id="modal6-toggle" class="modal-toggle" />
+                <label for="modal6-toggle" class="btn-comprar">Comprar</label>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal6-toggle" class="close">&times;</label>
+                        <h3>Produto Fora de Estoque</h3>
+                        <p>Desculpe, este produto não está disponível no momento.</p>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <!-- Modais Fora de Estoque -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Produto Fora de Estoque</h3>
+            <p>Desculpe, este produto não está disponível no momento.</p>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre container">
+        <h2>Sobre a Grão Nobre</h2>
+        <p>Somos apaixonados por café especial e buscamos trazer para você os melhores grãos selecionados com cuidado,
+            para proporcionar uma experiência única em cada xícara. Nosso objetivo é valorizar o verdadeiro sabor do
+            café,
+            respeitando produtores e trazendo consciência ambiental para a sua xícara.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato container">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensagem de sucesso -->
+        <div id="mensagem-enviada" class="mensagem-enviada"></div>
+    </section>
+
+
+    <script src="contato.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Grão Nobre. Todos os direitos reservados.</p>
+            <p>
+                Site usado para Portfólio.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
