@@ -1,2 +1,2 @@
-# Grao-Nobre
-site para portifólio. Com ajuda do chatgpt.
+# grao-nobre
+Site de Loja Online de Café (Demonstrativo)
